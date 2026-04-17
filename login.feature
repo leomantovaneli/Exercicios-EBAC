@@ -14,13 +14,14 @@ Quando digitar um usuário válido
 E a senha válida
 Então Deve ser direcionado para a página de pedidos
 
-Scenario Outline: Login com dados inválidos
+Esquema do Cenario: Login com dados inválidos
 Quando digitar um <usuario>
 E a senha <senha>
-Então deve ser exibida uma mensagem de erro "Usuário ou senha inválidos"
+Então deve exibir a <mensagem>
 
-Examples:
-    | usuario   | senha |
-    | valido  | invalido |
-    | invalido | valido |
-    | invalido | invalido |
+Exemplos:
+    | usuario                | senha            |  mensagem                     
+    | teste@ebacshop.com     | Senhavalida123   |  Login realizado com sucesso
+    | naoexiste@ebacshop.com | Senhavalida123   |  Usuário ou senha inválidos      
+    | teste@ebacshop.com     | Senhainvalida    |  Usuário ou senha inválidos         
+    | naoexiste@ebacshop.com | Senhainvalida    |  Usuário ou senha inválidos       

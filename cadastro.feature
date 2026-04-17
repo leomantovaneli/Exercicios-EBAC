@@ -20,18 +20,10 @@ Quando realizar cadastro na plataforma
 E deixar de preencher um ou mais campos sinalizados com asterisco (*)
 Então deve ser exibida uma mensagem de erro "preencha todos os campos obrigatórios"
 
-Scenario Outline: email com formato inválido
+Cenario: email com formato inválido
 Quando realizar cadastro na plataforma
-E inserir <email> 
+E inserir um email com formato inválido
 Então deve ser exibida uma mensagem de erro "formato de email inválido"
-
-Examples: 
-| email |
-| teste.com |
-| exemplo@teste |
-| exemplo@@teste.com |
-| exemplo@teste. com |
-| " " (campo vazio) |
 
 Cenario: Deixar campos em branco
 Quando realizar cadastro na plataforma

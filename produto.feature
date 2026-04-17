@@ -11,10 +11,9 @@ Contexto:
 Dado que o usuário está na página do produto
 
 Cenario: Caminho feliz do produto
-Quando adicionar o produto ao carrinho
-E selecionar cor, tamanho e quantidade
-E inserir ate 10 unidades
-Then deve ser direcionado para a página de checkout
+Quando selecionar cor, tamanho e quantidade
+E clicar em "adicionar o produto ao carrinho"
+Então deve ser direcionado para a página de checkout
 
 Cenario: Personalização do produto
 Quando adicionar o produto ao carrinho
