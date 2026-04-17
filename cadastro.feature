@@ -30,10 +30,3 @@ Quando realizar cadastro na plataforma
 E deixar um ou mais campos em branco
 Então deve ser exibida uma mensagem de erro "preencha todos os campos"
 
-Exemplo: 
-| email |
-|sem @ |
-|sem .com |
-|com dois @|
-|com espaço |
-|" " (campo vazio) |
